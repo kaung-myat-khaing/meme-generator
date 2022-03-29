@@ -1,0 +1,12 @@
+@use "../custom" as *;
+
+// NAVBAR POSITION
+@mixin top-pos-fixed {
+	position: fixed;
+	top: 0;
+}
+
+// BG-GRADIENT
+@mixin bg-gradient {
+	background: linear-gradient(to right, $purple-dark, $purple-light);
+}

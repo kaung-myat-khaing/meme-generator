@@ -1,0 +1,12 @@
+@use "./sections/header";
+@use "./sections/main";
+@use "./sections/form";
+@use "./sections/meme-template";
+// RESETS
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Karla", sans-serif;
+	box-sizing: border-box;
+	border-style: none;
+}

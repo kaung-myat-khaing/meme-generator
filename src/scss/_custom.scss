@@ -1,0 +1,17 @@
+// IMPORT SASS MAP OBJECT
+@use "sass:map";
+// MY COLORS
+$purple-dark: #672280;
+$purple-light: #a626d3;
+
+// PRIMARY COLOR
+$primary: $purple-dark;
+// OVERRIDES
+$dark: #d5d4d8;
+//  GRID-BREAKPOINTS OVERRIDE
+$grid-breakpoints: (
+	xs: 0,
+	sm: 550px,
+);
+// IMPORT BOOTSTRAP
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

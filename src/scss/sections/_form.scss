@@ -1,0 +1,19 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.generate-meme-form {
+	.row {
+		div {
+			height: 35px;
+		}
+	}
+	input {
+		padding-left: 0;
+		padding-right: 0;
+		text-indent: 10px;
+	}
+	button {
+		max-width: 550px;
+		display: block;
+		@include bg-gradient;
+	}
+}

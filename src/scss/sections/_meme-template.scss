@@ -1,0 +1,40 @@
+@use "../custom" as *;
+.meme-template {
+	text-align: center;
+	position: relative;
+	max-width: 512px;
+	width: 100%;
+	&--img {
+		width: 100%;
+		@include media-breakpoint-up(sm) {
+			max-height: 420px;
+			max-width: 100%;
+			width: auto;
+		}
+		@include media-breakpoint-down(sm) {
+			max-height: 300px;
+			max-width: 100%;
+			width: auto;
+		}
+	}
+	&--text {
+		position: absolute;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-family: Impact, san-serif;
+		text-align: center;
+		width: 100%;
+		text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+			-2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+			2px 2px 5px #000;
+		letter-spacing: 0.1rem;
+	}
+	.top-text {
+		left: 0;
+		top: 10px;
+	}
+	.btm-text {
+		left: 0;
+		bottom: 10px;
+	}
+}
